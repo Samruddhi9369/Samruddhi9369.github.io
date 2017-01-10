@@ -31,6 +31,7 @@
 		e.preventDefault();
 		$(".nav li.active").removeClass("active"); //Remove any "active" class  
 		$(this).parents("li").addClass("active"); //Add "active" class to selected tab  
+		$("#navbar").removeClass("in"); //Hide dropdown  
 		var hash = this.hash; 
 		 $('html, body').stop().animate({
 			scrollTop: $(hash).offset().top
