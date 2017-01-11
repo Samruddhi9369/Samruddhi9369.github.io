@@ -28,10 +28,10 @@
 	================================================== -->
 	<link rel="icon" type="image/PNG" href="assets/favicons/favicon.png">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="500">
   
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -43,17 +43,17 @@
           <a class="navbar-brand" href="#intro">Samruddhi Kalyankar</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    	<!-- intro section
-   ================================================== -->
+    	<!-- intro section -->
    <section id="intro">   
 
    	<div class="intro-overlay"></div>	
@@ -89,8 +89,7 @@
    </section> <!-- /intro -->
 
 
-   <!-- about section
-   ================================================== -->
+   <!-- about section -->
    <section id="about">  
 
    	<div class="row section-intro">
@@ -101,7 +100,7 @@
 
    			<div class="intro-info">
 
-   				<img type="image/JPG" src="assets/images/profile-pic.JPG" alt="Profile Picture">
+   				<img type="image/JPG" class="img-circle" src="assets/images/profile-pic.JPG" alt="Profile Picture">
 
    				<p class="lead">
 				I am a graduate student at California State University Long beach, pursuing M.S. degree in Computer Engineering.
@@ -117,72 +116,80 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
 
    			<div class="skills-row"><h1>Skills</h1></div>
    		<div class="col-six tab-full">
-
-   			<div class="skillbar clearfix " data-percent="90%">
-				<div class="skillbar-title bar-violet-heading"><span>HTML5</span></div>
-				<div class="skillbar-bar bar-violet"></div>
-				<div class="skill-bar-percent">90%</div>
-			</div> <!-- End Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="85%">
-				<div class="skillbar-title bar-blue-heading"><span>CSS3</span></div>
-				<div class="skillbar-bar bar-blue"></div>
-				<div class="skill-bar-percent">85%</div>
-			</div> <!-- End Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title bar-violet-heading"><span>jQuery</span></div>
-				<div class="skillbar-bar bar-violet"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div> <!-- End Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title bar-blue-heading"><span>JavaScript</span></div>
-				<div class="skillbar-bar bar-blue"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div> <!-- End Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title bar-violet-heading"><span>PHP</span></div>
-				<div class="skillbar-bar bar-violet"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div> <!-- End Skill Bar -->
-   			
+			<div class="progress" data-percent="90%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+				<span style="float:left;padding: 0 20px;">HTML5</span>
+			  </div><div class="fl-right">90%</div>
+			</div>
+			<div class="progress" data-percent="85%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+				<span style="float:left;padding: 0 20px;">CSS3</span>
+			  </div><div class="fl-right">85%</div>
+			</div>
+			<div class="progress" data-percent="70%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+				<span style="float:left;padding: 0 20px;">JavaScript </span>
+			  </div><div class="fl-right">70%</div>
+			</div>
+			<div class="progress" data-percent="70%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+				<span style="float:left;padding: 0 20px;">Jquery</span>
+			  </div><div class="fl-right">70%</div>
+			</div>
+			<div class="progress" data-percent="65%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+				<span style="float:left;padding: 0 20px;">PHP</span>
+			  </div><div class="fl-right">65%</div>
+			</div>
+			<div class="progress" data-percent="80%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+				<span style="float:left;padding: 0 20px;">Bootstrap</span>
+			  </div><div class="fl-right">80%</div>
+			</div>
+			<div class="progress" data-percent="85%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+				<span style="float:left;padding: 0 20px;">Moodle</span>
+			  </div><div class="fl-right">85%</div>
+			</div>
    		</div>
 
    		<div class="col-six tab-full">
 
-
-   			<div class="skillbar clearfix " data-percent="75%">
-	<div class="skillbar-title bar-violet-heading"><span>Java</span></div>
-	<div class="skillbar-bar bar-violet"></div>
-	<div class="skill-bar-percent">75%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="80%">
-	<div class="skillbar-title bar-blue-heading"><span>Android</span></div>
-	<div class="skillbar-bar bar-blue"></div>
-	<div class="skill-bar-percent">80%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="70%">
-	<div class="skillbar-title bar-violet-heading"><span>C</span></div>
-	<div class="skillbar-bar bar-violet"></div>
-	<div class="skill-bar-percent">70%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="70%">
-	<div class="skillbar-title bar-blue-heading"><span>Moodle</span></div>
-	<div class="skillbar-bar bar-blue"></div>
-	<div class="skill-bar-percent">75%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="70%">
-	<div class="skillbar-title bar-violet-heading"><span>SQL</span></div>
-	<div class="skillbar-bar bar-violet"></div>
-	<div class="skill-bar-percent">70%</div>
-</div> <!-- End Skill Bar -->
-   				
+			<div class="progress" data-percent="90%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+				<span style="float:left;padding: 0 20px;">Java</span>
+			  </div><div class="fl-right">90%</div>
+			</div>
+			<div class="progress" data-percent="85%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+				<span style="float:left;padding: 0 20px;">Android</span>
+			  </div><div class="fl-right">85%</div>
+			</div>
+			<div class="progress" data-percent="70%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+				<span style="float:left;padding: 0 20px;">C </span>
+			  </div><div class="fl-right">70%</div>
+			</div>
+			<div class="progress" data-percent="70%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+				<span style="float:left;padding: 0 20px;">SQL</span>
+			  </div><div class="fl-right">70%</div>
+			</div>
+			<div class="progress" data-percent="65%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+				<span style="float:left;padding: 0 20px;">Python</span>
+			  </div><div class="fl-right">65%</div>
+			</div>
+			<div class="progress" data-percent="80%">
+			  <div class="progress-bar progress-bar-striped progress-bar-violet active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+				<span style="float:left;padding: 0 20px;">Bootstrap</span>
+			  </div><div class="fl-right">80%</div>
+			</div>
+			<div class="progress" data-percent="85%">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+				<span style="float:left;padding: 0 20px;">Drupal</span>
+			  </div><div class="fl-right">85%</div>
+			</div>
 
    		</div>
 
@@ -191,25 +198,23 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
    	<div class="row button-section">
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a target="_blank" href="assets/Resume/Resume-Samruddhi_Kalyankar.pdf" title="Download CV" class="button button-primary">Download CV</a>
+   			<a target="_blank" href="assets/Resume/Resume-Samruddhi_Kalyankar.pdf" title="Download CV" class="button button-primary"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download CV</a>
    		</div>   		
    	</div>
 
    </section> <!-- /process-->    
 
 
-   <!-- resume Section
-   ================================================== -->
+   <!-- resume Section -->
 	<section id="resume" class="grey-section">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<h5>Resume</h5>
-   			<h1>More of my credentials.</h1>
+				<h5>Resume</h5>
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+			</div>   		
+		</div> <!-- /section-intro--> 
 
    	<div class="row resume-timeline">
 
@@ -328,16 +333,165 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
 		
 	</section> <!-- /features -->
 
+	<section id="portfolio">
 	
-   <!-- contact
-   ================================================== -->
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Projects and Seminars</h5>
+
+			</div>   		
+		</div> <!-- /section-intro--> 
+		
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+			<div class="col-six tab-full">
+				<div class="skills-row"><h1>Academic Projects</h1></div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">SIMPLE INTERPRETIVE LANGUAGE</div>
+				  <div class="panel-body">
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/SIL.png" alt="SIL">
+	                  <div class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Simple Interpretive Language</h3>
+										<span class="folio-types clearfix">Oct 2016 – Nov 2016 </span>
+		     					    	 <span class="folio-types">
+		     					       	  This project is built in Java, ANTLR 3.4. This project interprets and executes the SIL language statements in real time. ANTLR 3.4 is used to generate grammar.
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </div>
+	               </div>	               
+	        		</div> 
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">WAYFARE</div>
+				  <div class="panel-body"> 
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/wayfare.PNG" alt="WayFare">
+	                  <div class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">WayFare</h3>	    
+										<span class="folio-types clearfix">Jul 2013 – Feb 2014 </span>  					    
+		     					    	<span class="folio-types">
+		     					       	  This project is Android app for Carpool Application to provide Pick up and drop off for the school children mainly used by the parents. It was built using Android SDK, Wamp server and MySQL. The project was sponsored by Symantec, India.
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </div>
+	               </div>
+	        		</div>
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">WEBSITE FOR COMPUTER DEPARTMENT</div>
+				  <div class="panel-body">
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/compdept.PNG" alt="Website for Computer Department">
+	                  <div class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Website for Computer Department</h3>	   
+										<span class="folio-types clearfix">Aug 2012 – Oct 2012</span>    					    
+		     					    	<span class="folio-types">
+		     					       	  A web application to provide the common platform for the students and faculty members. We have developed this web application using HTML, JavaScript, PHP, JSP and JDBC.
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </div>
+	               </div>
+	        		</div>
+				  </div>
+				</div>
+				<!--div class="panel panel-primary">
+				  <div class="panel-heading">ONLINE REVIEW MINING</div>
+				  <div class="panel-body">To extract the information or the knowledge from the online reviews about any product or service. I have explained it with the help of Product Ranking methodology and case study in movie domain.</div>
+				</div-->
+			</div>
+			<div class="col-six tab-full">
+			<div class="skills-row"><h1>Industrial Projects</h1></div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">SKILLSURVEY</div>
+				  <div class="panel-body">
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/skillsurvey.PNG" alt="SkillSurvey">
+	               	<div class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">SkillSurvey</h3>	  
+										<span class="folio-types clearfix">Dec 2014 – Jul 2016  </span>   					    
+		     					    	<span class="folio-types">
+		     					       	  This project was developed for automating the process of credentialing using online applications, peer referencing, privileging and hospital affiliation verification for faster and easier onboarding. It was built using ASP.NET MVC for this client. I developed online and offline chat feature in the existing SkillSurvey project using ASP.NET MVC and HTML, CSS and JQuery as a part of Hackathon project competition.
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </div>
+	               </div>
+	        		</div>
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">T-21</div>
+				  <div class="panel-body">
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/t21.PNG"alt="T-21">
+	                  <div class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">T-21</h3>	     
+										<span class="folio-types clearfix">Dec 2014 – Dec 2015  </span> 					    
+		     					    	<span class="folio-types">
+		     					       	  This project was multi-lingual web application developed in CakePHP, PHP, HTML, CSS and JQuery. This was developed mainly for the youth to help building skills, mentoring, career navigation and employment networking.
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </div>
+	               </div>
+	        		</div>
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">EXPLORATION ON AUGMENTED REALITY</div>
+				  <div class="panel-body">
+				  <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="assets/images/portfolio/aug-reality.PNG" alt="Exploration on Augmented Reality">
+	                  <div class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Exploration on Augmented Reality</h3>	
+										<span class="folio-types clearfix">Aug 2014 – Nov 2014</span>        					    
+		     					    	<span class="folio-types">
+		     					       	  It was an android application developed using Metaio SDK to explore Augmented Reality Concept.
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </div>
+	               </div>
+	        		</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+   <!-- contact-->
 	<section id="contact">
 
 		<div class="row section-intro">
    		<div class="col-twelve">
 
    			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
 
    		</div> 
    	</div> <!-- /section-intro -->
@@ -352,7 +506,7 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
    				<i class="icon-pin"></i>
    			</div>
 
-   			<h5>Where to find me</h5>
+   			<h5>Address</h5>
 
    			<p>
             5050 E Garford St Apt #59<br>
@@ -368,7 +522,7 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
    				<i class="icon-mail"></i>
    			</div>
 
-   			<h5>Email Me At</h5>
+   			<h5>Email</h5>
 
    			<p>samruddhi9369@gmail.com		     
 			   </p>
@@ -381,10 +535,10 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
    				<i class="icon-phone"></i>
    			</div>
 
-   			<h5>Call Me At</h5>
+   			<h5>Phone</h5>
 
    			<p>
-			   	Mobile: (562)-850-7084
+			   	Mobile: +1 (562)-850-7084
 			   </p>
 
    		</div>
@@ -397,7 +551,11 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
    <!-- footer
    ================================================== -->
 
-   <footer>
+   <footer class="container-fluid text-center">
+   
+			<a href="#intro" title="To Top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
      	<div class="row">
 
      		<div class="col-six tab-full pull-right social" style="width: 100%;">
@@ -413,16 +571,6 @@ I have an undivided passion for problem solving and coding. Apart from these, dr
 	      		
 	      </div>
 
-      	<!--div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Kards 2016.</span> 
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
-		         </div>		                  
-	      	</div-->
-
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
 
       	</div> <!-- /row -->     	
    </footer>

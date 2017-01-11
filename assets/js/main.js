@@ -1,5 +1,6 @@
+	
 	$(window).load(function() {
-
+		
       // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
 
@@ -26,8 +27,9 @@
 			width:jQuery(this).attr('data-percent')
 		},6000);
 	});
+	
 		
-	$(".nav li a").click(function ( e ) {
+	$(".nav li a, footer a[href='#intro']").click(function ( e ) {
 		e.preventDefault();
 		$(".nav li.active").removeClass("active"); //Remove any "active" class  
 		$(this).parents("li").addClass("active"); //Add "active" class to selected tab  
