@@ -1242,6 +1242,7 @@ footer .glyphicon {
 #portfolio .panel-primary > .panel-heading {
 	background-color: #4d6680;
 	border-color: #4d6680;
+	text-align: center;
 }
 
 @media only screen and (max-width:1024px) {
