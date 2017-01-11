@@ -514,6 +514,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .fl-right {
 	float:right;
 	padding: 0 2px;
+	font-size: 9px;
 }
 .progress {
 	height:30px;
@@ -964,7 +965,7 @@ footer .glyphicon {
 		margin-bottom: 4.2rem;
 	}
 	.button-section .button {
-		width: 100%;
+		width: 70%;
 		margin-bottom: 3rem;
 	}
 	.button-section [class*="col-"] .button:first-child {
@@ -1438,5 +1439,14 @@ footer .copyright span:last-child::after {
 	}
 	footer .copyright span::after {
 		display: none;
+	}
+	footer .footer-social li {
+		display: inline-block;
+		margin: 0 8px;
+		padding: 0;
+	}
+	.container-fluid {
+		padding-right: 8px;
+		padding-left: 8px;
 	}
 }
