@@ -1227,6 +1227,7 @@ footer .glyphicon {
 }
 #portfolio .folio-item:hover .overlay {
 	background: rgba(0, 0, 0, 0.8);
+	overflow:scroll;
 }
 #portfolio .folio-item:hover .folio-item-cell {
 	left: 0;
@@ -1249,15 +1250,24 @@ footer .glyphicon {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
 	}
+	#portfolio .folio-item-cell {
+		overflow:scroll;
+	}
 }
 @media only screen and (max-width:768px) {
 	#portfolio .folio-title {
 		font-size: 2.5rem;
 	}
+	#portfolio .folio-item-cell {
+		overflow:scroll;
+	}
 }
 @media only screen and (max-width:400px) {
 	#portfolio .folio-title {
 		font-size: 2.2rem;
+	}
+	#portfolio .folio-item-cell {
+		overflow:scroll;
 	}
 }
 
@@ -1302,8 +1312,7 @@ footer .glyphicon {
 }
 
 /**
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
+ * loader animation 
  */
 .s-loader {
 	margin: 1.2rem auto 3rem;
