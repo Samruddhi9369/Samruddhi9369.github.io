@@ -1,25 +1,4 @@
-/**
- * =================================================================== 
- *
- *  Kards v1.0 Base Stylesheet
- *  url: styleshout.com
- *  03-01-2016
- *  ------------------------------------------------------------------
- *  TOC:
- *  01. reset
- *  02. basic/base setup styles
- *  03. grid
- *  04. MISC
- *
- * =================================================================== 
- */
 
-/** 
- * ===================================================================
- * 01. reset - normalize.css v3.0.2 | MIT License | git.io/normalize
- *
- * ------------------------------------------------------------------- 
- */
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -30,38 +9,13 @@ body {
 	margin: 0;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section {
 	display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-	display: inline-block;
-	vertical-align: baseline;
-}
-
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-[hidden],
-template {
-	display: none;
 }
 
 a {
@@ -73,17 +27,9 @@ a:hover {
 	outline: 0;
 }
 
-abbr[title] {
-	border-bottom: 1px dotted;
-}
-
 b,
 strong {
 	font-weight: bold;
-}
-
-dfn {
-	font-style: italic;
 }
 
 h1 {
@@ -91,66 +37,16 @@ h1 {
 	margin: 0.67em 0;
 }
 
-mark {
-	background: #ff0;
-	color: #000;
-}
-
 small {
 	font-size: 80%;
-}
-
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	top: -0.5em;
-}
-
-sub {
-	bottom: -0.25em;
 }
 
 img {
 	border: 0;
 }
 
-svg:not(:root) {
-	overflow: hidden;
-}
-
-figure {
-	margin: 1em 40px;
-}
-
-hr {
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	height: 0;
-}
-
-pre {
-	overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
 button,
-input,
-optgroup,
-select,
-textarea {
+input {
 	color: inherit;
 	font: inherit;
 	margin: 0;
@@ -158,24 +54,13 @@ textarea {
 
 button {
 	overflow: visible;
-}
-
-button,
-select {
 	text-transform: none;
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type="button"] {
 	-webkit-appearance: button;
 	cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-	cursor: default;
 }
 
 button::-moz-focus-inner,
@@ -188,47 +73,6 @@ input {
 	line-height: normal;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-	border: 0;
-	padding: 0;
-}
-
-textarea {
-	overflow: auto;
-}
-
-optgroup {
-	font-weight: bold;
-}
 
 table {
 	border-collapse: collapse;
@@ -277,8 +121,7 @@ button {
  * Media - (_basic.scss)
  * ------------------------------------------------------------------- 
  */
-img,
-video {
+img {
 	max-width: 100%;
 	height: auto;
 }
@@ -288,9 +131,6 @@ video {
  * ------------------------------------------------------------------- 
  */
 div,
-dl,
-dt,
-dd,
 ul,
 ol,
 li,
@@ -300,10 +140,7 @@ h3,
 h4,
 h5,
 h6,
-pre,
-form,
 p,
-blockquote,
 th,
 td {
 	margin: 0;
@@ -361,36 +198,6 @@ a img {
 	border: none;
 }
 
-/**
- * inputs - (_basic.scss)
- * ------------------------------------------------------------------- 
- */
-fieldset {
-	margin: 0;
-	padding: 0;
-}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-}
-
-/** 
- * ===================================================================
- * 03. grid - (_grid.scss)
- *
- * ------------------------------------------------------------------- 
- */
 .row {
 	width: 94%;
 	max-width: 1140px;
@@ -427,56 +234,12 @@ textarea {
 	padding: 0 20px 0 0;
 }
 
-.col-one {
-	width: 8.33333%;
-}
-
-.col-two,
-.col-1-6 {
-	width: 16.66667%;
-}
-
-.col-three,
-.col-1-4 {
-	width: 25%;
-}
-
-.col-four,
-.col-1-3 {
-	width: 33.33333%;
-}
-
-.col-five {
-	width: 41.66667%;
-}
 
 .col-six,
 .col-1-2 {
 	width: 50%;
 }
 
-.col-seven {
-	width: 58.33333%;
-}
-
-.col-eight,
-.col-2-3 {
-	width: 66.66667%;
-}
-
-.col-nine,
-.col-3-4 {
-	width: 75%;
-}
-
-.col-ten,
-.col-5-6 {
-	width: 83.33333%;
-}
-
-.col-eleven {
-	width: 91.66667%;
-}
 
 .col-twelve,
 .col-full {
@@ -521,29 +284,6 @@ textarea {
 		padding: 0 15px;
 	}
 
-	.tab-1-4 {
-		width: 25%;
-	}
-
-	.tab-1-3 {
-		width: 33.33333%;
-	}
-
-	.tab-1-2 {
-		width: 50%;
-	}
-
-	.tab-2-3 {
-		width: 66.66667%;
-	}
-
-	.tab-3-4 {
-		width: 75%;
-	}
-
-	.tab-full {
-		width: 100%;
-	}
 
 }
 
@@ -566,21 +306,6 @@ textarea {
 		padding: 0 10px;
 	}
 
-	.mob-1-4 {
-		width: 25%;
-	}
-
-	.mob-1-2 {
-		width: 50%;
-	}
-
-	.mob-3-4 {
-		width: 75%;
-	}
-
-	.mob-full {
-		width: 100%;
-	}
 
 }
 
@@ -611,12 +336,6 @@ textarea {
 
 }
 
-/** 
- * ===================================================================
- * block grids - (_grid.scss)
- *
- * ------------------------------------------------------------------- 
- */
 [class*="block-"]:before,
 [class*="block-"]:after {
 	content: "";
@@ -627,199 +346,8 @@ textarea {
 	clear: both;
 }
 
-.block-1-6 .bgrid {
-	width: 16.66667%;
-}
-
-.block-1-4 .bgrid {
-	width: 25%;
-}
-
-.block-1-3 .bgrid {
-	width: 33.33333%;
-}
-
-.block-1-2 .bgrid {
-	width: 50%;
-}
-
-/**
- * Clearing for block grid columns. Allow columns with 
- * different heights to align properly.
- */
-.block-1-6 .bgrid:nth-child(6n+1),
-.block-1-4 .bgrid:nth-child(4n+1),
-.block-1-3 .bgrid:nth-child(3n+1),
-.block-1-2 .bgrid:nth-child(2n+1) {
-	clear: both;
-}
-
-/**
- * small screens - (_grid.scss)
- * --------------------------------------------------------------- 
- */
-@media screen and (max-width:1024px) {
-	.block-s-1-6 .bgrid {
-		width: 16.66667%;
-	}
-
-	.block-s-1-4 .bgrid {
-		width: 25%;
-	}
-
-	.block-s-1-3 .bgrid {
-		width: 33.33333%;
-	}
-
-	.block-s-1-2 .bgrid {
-		width: 50%;
-	}
-
-	.block-s-full .bgrid {
-		width: 100%;
-		clear: both;
-	}
-
-	[class*="block-s-"] .bgrid:nth-child(n) {
-		clear: none;
-	}
-
-	.block-s-1-6 .bgrid:nth-child(6n+1),
-	.block-s-1-4 .bgrid:nth-child(4n+1),
-	.block-s-1-3 .bgrid:nth-child(3n+1),
-	.block-s-1-2 .bgrid:nth-child(2n+1) {
-		clear: both;
-	}
-
-}
-
-/**
- * tablets - (_grid.scss)
- * --------------------------------------------------------------- 
- */
-@media screen and (max-width:768px) {
-	.block-tab-1-6 .bgrid {
-		width: 16.66667%;
-	}
-
-	.block-tab-1-4 .bgrid {
-		width: 25%;
-	}
-
-	.block-tab-1-3 .bgrid {
-		width: 33.33333%;
-	}
-
-	.block-tab-1-2 .bgrid {
-		width: 50%;
-	}
-
-	.block-tab-full .bgrid {
-		width: 100%;
-		clear: both;
-	}
-
-	[class*="block-tab-"] .bgrid:nth-child(n) {
-		clear: none;
-	}
-
-	.block-tab-1-6 .bgrid:nth-child(6n+1),
-	.block-tab-1-4 .bgrid:nth-child(4n+1),
-	.block-tab-1-3 .bgrid:nth-child(3n+1),
-	.block-tab-1-2 .bgrid:nth-child(2n+1) {
-		clear: both;
-	}
-
-}
-
-/**
- * large mobile devices - (_grid.scss)
- * --------------------------------------------------------------- 
- */
-@media screen and (max-width:600px) {
-	.block-mob-1-6 .bgrid {
-		width: 16.66667%;
-	}
-
-	.block-mob-1-4 .bgrid {
-		width: 25%;
-	}
-
-	.block-mob-1-3 .bgrid {
-		width: 33.33333%;
-	}
-
-	.block-mob-1-2 .bgrid {
-		width: 50%;
-	}
-
-	.block-mob-full .bgrid {
-		width: 100%;
-		clear: both;
-	}
-
-	[class*="block-mob-"] .bgrid:nth-child(n) {
-		clear: none;
-	}
-
-	.block-mob-1-6 .bgrid:nth-child(6n+1),
-	.block-mob-1-4 .bgrid:nth-child(4n+1),
-	.block-mob-1-3 .bgrid:nth-child(3n+1),
-	.block-mob-1-2 .bgrid:nth-child(2n+1) {
-		clear: both;
-	}
-
-}
-
-/**
- * stack on small mobile devices - (_grid.scss)
- * --------------------------------------------------------------- 
- */
-@media screen and (max-width:400px) {
-	.stack .bgrid {
-		width: 100% !important;
-		float: none !important;
-		clear: both !important;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-}
-
-/** 
- * ===================================================================
- * 04. MISC  - (_grid.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-/**
- * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
- */
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
-
-.group:after {
-	clear: both;
-}
-
-/**
- * Misc Helper Styles 
- */
 .hide {
 	display: none;
-}
-
-.invisible {
-	visibility: hidden;
-}
-
-.antialiased {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .remove-bottom {
@@ -867,5 +395,3 @@ textarea {
 	margin-right: auto;
 	text-align: center;
 }
-
-/*# sourceMappingURL=base.css.map */
